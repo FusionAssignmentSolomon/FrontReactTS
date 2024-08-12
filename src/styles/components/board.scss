@@ -1,0 +1,28 @@
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+
+    &__square {
+      background-color: #eeeeee;
+      border: none;
+      font-size: 2rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #c4c4c4;
+      }
+    }
+  }
